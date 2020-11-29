@@ -1,0 +1,97 @@
+.promo{
+   background: url('../img/bg/bg1.png') center (center/cover) no-repeat;
+   min-height: 650px;
+   position: relative;
+   .header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 20px;
+      padding-bottom: 93px;
+      .header__logo{
+         width: 250px;
+         .header__logo-img{
+            max-width: 100%;
+         }
+      }
+      .header__official{
+         color: $light;
+         font-size: 12px;
+         font-weight: 400;
+         text-align: center;
+         span{
+            font-size: 18px;
+            font-weight: 700;
+            display: block;
+            margin-top: 4px;
+         }
+      }
+      .header__contacts{
+         text-align: right;
+         a{
+            display: block;
+            color: $light;
+            font-size: 18px;
+            font-weight: bold; 
+            margin-bottom: 4px;  
+         }
+      }
+   }
+   .promo__wrapper{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      text-align: right;
+      .promo__header{
+         color: $light;
+         font-size: 42px;
+         font-weight: 700;
+         text-transform: uppercase;
+      }
+      .promo__sub-header{
+         color: $light;
+         margin-top: 17px;
+         color: #ffffff;
+         font-size: 24px;
+         font-weight: 500;
+         text-transform: uppercase;
+      }
+      .promo__icons{
+         display: flex;
+         justify-content: flex-end;
+         margin-top: 66px;
+         .promo__icon{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            align-self: center;
+            margin-left: 110px;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 500;
+            img{
+               max-width: 42px;
+               margin-bottom: 20px;
+            }
+         }
+      }
+      .promo__link{
+         font-size: 16px;
+         font-weight: 500;
+         margin-top: 18px;
+         a{
+            color: $light;
+            span{
+               text-transform: uppercase;
+               text-decoration: underline;
+            }
+         }
+      }
+   }
+}
+
+
+.hamburger{
+   display: none;
+}

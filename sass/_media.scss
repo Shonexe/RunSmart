@@ -1,0 +1,85 @@
+@media (max-width: 791px){
+   .promo{
+      .promo__wrapper{
+         align-items: center;
+         .promo__header{
+            font-size: 30px;
+         }
+         .promo__sub-header{
+            font-size: 20px;
+         }
+         .promo__icons{
+          margin-left: 0;
+          .promo__icon{
+            margin: 0px 20px;
+          }
+         }
+      }
+   }
+   .catalog{
+      .catalog__content{
+         flex-direction: column;
+      }
+   }
+}
+
+@media (max-width: 661px){
+   .hidden{
+      display: none;
+   }
+   .promo{
+      .header{
+         justify-content: center;
+      }
+   }
+
+   .advantages{
+      .advantages__items{
+         margin-top: 0;
+        flex-direction: column;
+        align-items: center;
+      }
+      .advantages__item{
+         margin-top: 100px;
+      }
+   }
+   .consultation{
+      .title,.consultation__description{
+         font-size: 20px;
+         text-align: center;
+      }
+      .consultation__wrapper{
+         align-items: center;
+      }
+   }
+}
+
+@media (max-width: 984px){
+   .slider__items{
+      max-width: 600px;
+      img{
+         max-width: 100%;
+      }
+   }
+}
+
+@media (max-width: 791px){
+   .slider__items{
+      max-width: 400px;
+      img{
+         max-width: 100%;
+      }
+   }
+}
+
+@media(max-width: 560px){
+   .slider__items{
+      max-width: 300px;
+      img{
+         max-width: 100%;
+      }
+   }
+   .slick-prev, .slick-next{
+      display: none;
+   }
+}

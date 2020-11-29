@@ -1,0 +1,36 @@
+.advantages{
+   margin-top: 70px;
+   padding-bottom: 76px;
+   background-color: #f6f6f6;
+   .advantages__header{
+      color: $black;
+      font-size: 30px;
+      font-weight: 700;
+      text-align: center;
+   }
+   .advantages__items{
+      margin-top: 65px;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      .advantages__item{
+         .advantages__item-header{
+            margin-top: 38px;
+            color: $black;
+            font-size: 18px;
+            font-weight: 700;
+         }
+         .advantages__item-text{
+            max-width: 230px;
+            margin-top: 26px;
+            color: $black;
+            font-size: 14px;
+            font-weight: 300;
+            a{
+               color: $red;
+               text-decoration: underline;
+            }
+         }
+      }
+   }
+}

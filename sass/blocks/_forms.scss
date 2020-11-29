@@ -1,0 +1,21 @@
+.consultation__wrapper{
+   display: flex;
+   flex-direction: column;
+   .consultation__input-name{
+      margin-top: 36px;
+      width: 300px;
+      height: 50px;
+      border-radius: 5px;
+      background-color: #ffffff;
+   }
+   input{
+      margin-top: 15px;
+      width: 300px;
+      height: 50px;
+      border-radius: 5px;
+      background-color: #ffffff;
+      padding-left: 20px;
+      font-size: 14px;
+      font-weight: 300;
+   }
+}
