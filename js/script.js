@@ -23,23 +23,6 @@ $(document).ready(function () {
    });
 
 
-
-   // $('.catalog__item-link').each(function (i) {
-   //    $(this).on('click', function (e) {
-   //       e.preventDefault();
-   //       $('.catolog-item__content').eq(i).toggleClass('catolog-item__content_active');
-   //       $('.catolog-item__list').eq(i).toggleClass('catolog-item__list_active');
-   //    })
-   // })
-
-   // $('.behaind').each(function (i) {
-   //    $(this).on('click', function (e) {
-   //       e.preventDefault();
-   //       $('.catolog-item__content').eq(i).toggleClass('catolog-item__content_active');
-   //       $('.catolog-item__list').eq(i).toggleClass('catolog-item__list_active');
-   //    })
-   // })
-
    function toggleSlide(item) {
       $(item).each(function (i) {
          $(this).on('click', function (e) {
@@ -53,6 +36,28 @@ $(document).ready(function () {
 
    toggleSlide('.catalog__item-link');
    toggleSlide('.behaind');
+
+   //
+
+   $('[data-modal=consultation]').on('click', function () {
+      $('.overlay, #consultation').fadeIn('fast');
+   });
+
+   $('.modal__close').on('click', function () {
+      $('.overlay , #consultation, #buy, #order').fadeOut('fast')
+   });
+
+   $('.button_small').on('click', function () {
+      $('.overlay , #order').fadeIn('fast')
+   });
+
+
+   $('.button_small').each(function (i) {
+      $(this).on('click', function () {
+         $('#order  .modal__description').text($('.catalog__item-subtitle').eq(i).text());
+         $('.overlay , #order').fadeIn('fast')
+      })
+   })
 });
 
 

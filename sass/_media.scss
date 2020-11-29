@@ -83,3 +83,24 @@
       display: none;
    }
 }
+
+
+@media (max-width: 842px){
+   .footer{
+      .footer__info{
+         max-width: 460px;
+         min-width: 300px;
+         min-height: 270px;
+         background-color: $red;
+         position: absolute;
+         top: 0;
+         left: 50%;
+         transform: translateX(-50%);
+         text-align: center;
+         padding: 25px 25px;
+         .footer__social{
+            flex-direction: column;
+         }
+      }
+   }
+}
