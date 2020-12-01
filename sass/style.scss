@@ -10,7 +10,7 @@
    padding: 0 10px;
 }
 
-
+@import "base/animate";
 @import "nullstyle";
 @import "base/mixins.scss";
 @import "base/variable.scss";
@@ -24,6 +24,8 @@
 @import "blocks/reviws";
 @import "blocks/footer";
 @import "blocks/modal";
+@import "blocks/pageup";
+
 @import "media";
 
 

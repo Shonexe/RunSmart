@@ -58,6 +58,62 @@ $(document).ready(function () {
          $('.overlay , #order').fadeIn('fast')
       })
    })
+
+
+   function validateForms(form) {
+      $(form).validate({
+         rules: {
+            name: {
+               required: true,
+               minlength: 2
+            },
+            phone: {
+               required: true,
+               minlength: 11
+            },
+            email: {
+               required: true,
+               minlength: 8,
+               email: true
+            }
+         }
+      });
+   }
+
+   validateForms('#consultation-form form');
+   validateForms('#consultation form');
+   validateForms('#order form');
+
+
+   $('input[name=phone]').mask("+7 (999) 999-99-99");
+
+   $('form').submit(function (e) {
+      e.preventDefault();
+      $.ajax({
+         type: "POST",
+         url: "mailer/smart.php",
+         data: $(this).serialize()
+      }).done(function () {
+         $(this).find('input').val('');
+
+
+         $('form').trigger('reset');
+      })
+      return false;
+   });
+
+   $(window).scroll(function () {
+      if ($(this).scrollTop() > 1600) {
+         $('.pageup').fadeIn();
+      } else {
+         $('.pageup').fadeOut();
+      }
+   });
+   $("a[href^='#']").click(function () {
+      const _href = $(this).attr("href");
+      $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+      return false;
+   });
 });
 
 

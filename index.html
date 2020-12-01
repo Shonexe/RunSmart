@@ -12,7 +12,7 @@
 </head>
 
 <body>
-   <div class="promo">
+   <div id="up" class="promo">
       <div class="container">
          <header class="header">
             <a href="#" class="header__logo">
@@ -70,7 +70,7 @@
                   так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
             </div>
             <div class="advantages__item">
-               <img src="img/icon/heart.png" alt="icon" class="advantages__item-img">
+               <img src="img/icon/heart.png" alt="icon" class="advantages__item-img advantages__item-animate">
                <h3 class="advantages__item-header">Заботимся о здоровье</h3>
                <div class="advantages__item-text">Мы работаем для того,
                   чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
@@ -87,7 +87,7 @@
          </div>
       </div>
    </section>
-   <section class="consultation">
+   <section class="consultation" id="consultation-form">
       <div class="container">
          <h2 class="title">Получите бесплатную консультацию <br>
             по подбору пульсометра </h2>
@@ -97,24 +97,28 @@
          </div>
          <form action="#" class="form">
             <div class="consultation__wrapper">
-               <input type="text" class="consultation__input-name" placeholder="Ваше имя" name="name">
-               <input type="number" class="consultation__input-secondName" placeholder="Ваш телефон" name="phone">
-               <input type="email" class="consultation__input-email" placeholder="Ваш E-mail" name="email">
+               <input type="text" required minlength="2" class="consultation__input-name" placeholder="Ваше имя"
+                  name="name">
+               <input required minlength="11" class="consultation__input-secondName" placeholder="Ваш телефон"
+                  name="phone">
+               <input type="email" required minlength="6" class="consultation__input-email" placeholder="Ваш E-mail"
+                  name="email">
                <button type="submit" class="button button__main">заказать кОНСУЛЬТАЦИЮ</button>
             </div>
          </form>
       </div>
    </section>
-   <section class="slider">
+   <div class="slider">
       <div class="container">
          <div class="slider__items">
-            <div class="slider__item"><img src="img/puls/4b6197c393e2d3fdb5980c4d5d8f2856.png"></div>
-            <div class="slider__item"><img src="img/puls/polar-m400-triple.png"></div>
-            <div class="slider__item"><img src="img/puls/polar-m600-trio-1470174547-vnNI-column-width-inline.png">
+            <div class="slider__item"><img src="img/puls/4b6197c393e2d3fdb5980c4d5d8f2856.png" alt="img"></div>
+            <div class="slider__item"><img src="img/puls/polar-m400-triple.png" alt="img"></div>
+            <div class="slider__item"><img src="img/puls/polar-m600-trio-1470174547-vnNI-column-width-inline.png"
+                  alt="img">
             </div>
          </div>
       </div>
-   </section>
+   </div>
 
    <section class="catalog">
       <div class="container">
@@ -146,7 +150,7 @@
                      <li> Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
                      <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
                      <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                     <a href="#" class="behaind">Назад</a>
+                     <div class=""><a href="#" class="behaind">Назад</a></div>
                   </ul>
                </div>
                <div class="hr"></div>
@@ -175,7 +179,7 @@
                      <li> Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
                      <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
                      <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                     <a href="#" class="behaind">Назад</a>
+                     <div class=""><a href="#" class="behaind">Назад</a></div>
                   </ul>
                </div>
                <div class="hr"></div>
@@ -204,7 +208,7 @@
                      <li> Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
                      <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
                      <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                     <a href="#" class="behaind">Назад</a>
+                     <div class=""><a href="#" class="behaind">Назад</a></div>
                   </ul>
                </div>
                <div class="hr"></div>
@@ -233,7 +237,7 @@
                      <li> Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
                      <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
                      <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                     <a href="#" class="behaind">Назад</a>
+                     <div class=""><a href="#" class="behaind">Назад</a></div>
                   </ul>
                </div>
                <div class="hr"></div>
@@ -262,7 +266,7 @@
                      <li> Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
                      <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
                      <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                     <a href="#" class="behaind">Назад</a>
+                     <div class=""><a href="#" class="behaind">Назад</a></div>
                   </ul>
                </div>
                <div class="hr"></div>
@@ -291,7 +295,7 @@
                      <li> Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
                      <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
                      <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                     <a href="#" class="behaind">Назад</a>
+                     <div class=""> <a href="#" class="behaind">Назад</a></div>
                   </ul>
                </div>
                <div class="hr"></div>
@@ -322,7 +326,7 @@
                      <li> Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
                      <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
                      <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                     <a href="#" class="behaind">Назад</a>
+                     <div class=""><a href="#" class="behaind">Назад</a></div>
                   </ul>
                </div>
                <div class="hr"></div>
@@ -384,7 +388,7 @@
                         <li> Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
                         <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
                         <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                        <a href="#" class="behaind">Назад</a>
+                        <div class=""><a href="#" class="behaind">Назад</a></div>
                      </ul>
                   </div>
                   <div class="hr"></div>
@@ -482,7 +486,7 @@
          <form action="#" class="form">
             <div class="consultation__wrapper">
                <input type="text" class="consultation__input-name" placeholder="Ваше имя" name="name">
-               <input type="number" class="consultation__input-secondName" placeholder="Ваш телефон" name="phone">
+               <input class="consultation__input-secondName" placeholder="Ваш телефон" name="phone">
                <input type="email" class="consultation__input-email" placeholder="Ваш E-mail" name="email">
                <button type="submit" class="button button__main">заказать кОНСУЛЬТАЦИЮ</button>
             </div>
@@ -495,9 +499,9 @@
          <div class="modal__description">Пульсометр Polar FT1</div>
          <form action="#" class="form">
             <div class="consultation__wrapper">
-               <input type="text" class="consultation__input-name" placeholder="Ваше имя" name="name">
-               <input type="number" class="consultation__input-secondName" placeholder="Ваш телефон" name="phone">
-               <input type="email" class="consultation__input-email" placeholder="Ваш E-mail" name="email">
+               <input type="text" required class="consultation__input-name" placeholder="Ваше имя" name="name">
+               <input required class="consultation__input-secondName" placeholder="Ваш телефон" name="phone">
+               <input type="email" required class="consultation__input-email" placeholder="Ваш E-mail" name="email">
                <button type="submit" class="button button__main">Купить</button>
             </div>
          </form>
@@ -511,9 +515,16 @@
       </div>
    </div>
 
-   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+   <a href="#up" class="pageup"><img src="img/icon/chevron.png" alt="up"></a>
+
+
+
+   <script src="https://use.fontawesome.com/312f3b684f.js"></script>
+   <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
    <script src="js/slick.min.js"></script>
+   <script src="js/jquery.validate.min.js"></script>
+   <script src="js/jquery.maskedinput.min.js"></script>
    <script src="js/script.js"></script>
 </body>
 
